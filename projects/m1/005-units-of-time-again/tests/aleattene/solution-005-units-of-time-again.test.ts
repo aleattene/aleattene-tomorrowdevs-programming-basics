@@ -16,7 +16,7 @@ describe('Get Days Hours Minutes Seconds', () => {
     });
 });
 
-describe('Get Days Hours Minutes Seconds', () => {
+describe('Create Duration Formatted String', () => {
     it('Test', () => {
         expect(createDurationFormatted(0,0,0,59)).toStrictEqual('0DD:0HH:0MM:59SS');
         expect(createDurationFormatted(0,0,1,0)).toStrictEqual('0DD:0HH:1MM:0SS');
