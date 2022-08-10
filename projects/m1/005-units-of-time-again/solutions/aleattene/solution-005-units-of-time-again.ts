@@ -1,21 +1,6 @@
+// import {dataInput} from "../../../../utils/dataInput";
 
-export function dataInput(userMessage: string): number {
-    const input = require('prompt-sync')();
-    let isInt = false;
-    let value: number = -1;
-    while(!isInt) {
-        value = input(userMessage);
-        if (value) {
-            value = Number(value);
-            isInt = (!isNaN(value) && Number.isInteger(value) && value > 0);
-        }
-        if (!isInt) console.log("Incorrect entry. Try again.")
-    }
-    return value;
-}
-
-// let duration: number = dataInput("Enter the duration (seconds): ")
-
+// let duration: number = Number(dataInput("Enter the duration (seconds): ", "PositiveInteger"));
 
 export function getDaysHoursMinutesSeconds(seconds: number) {
     const secondsInDay: number = 86400;     // 1 day = ( 60 * 60 * 24 ) seconds
