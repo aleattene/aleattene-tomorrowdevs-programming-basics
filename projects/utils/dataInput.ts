@@ -7,7 +7,7 @@ export function dataInput(userMessage: string, dataType: string): string {
         let isPositiveInteger = checkPositiveInteger(value);
         while(!isPositiveInteger) {
             console.log("Incorrect entry. Try again.");
-            value = input("Enter the integer number: ");
+            value = input(userMessage);
             isPositiveInteger = checkPositiveInteger(value);
         }
     value = (~~(Number(value))).toString();
