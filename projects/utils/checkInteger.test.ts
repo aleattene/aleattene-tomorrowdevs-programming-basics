@@ -1,4 +1,3 @@
-
 import {checkPositiveInteger} from './checkInteger';
 
 describe('Check Positive Number', () => {
