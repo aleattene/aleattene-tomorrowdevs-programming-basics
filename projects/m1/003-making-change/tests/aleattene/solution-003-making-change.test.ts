@@ -21,6 +21,9 @@ describe('calculateChange', () => {
         expect(changeMoney(1)).toEqual(
             { toonies: 0, loonies: 0, quarters: 0, dimes: 0, nickels: 0, pennies: 1 }
         );
+        expect(changeMoney(341)).toEqual(
+            { toonies: 1, loonies: 1, quarters: 1, dimes: 1, nickels: 1, pennies: 1 }
+        );
 
     });
 });
