@@ -1,5 +1,6 @@
-import {checkPositiveInteger} from "./checkInteger";
-import {checkAlphabetLetter} from "./checkLetter";
+import {checkPositiveInteger} from "./number/checkInteger";
+import {checkAlphabetLetter} from "./string/checkLetter";
+import {checkMonth} from "./date/checkMonth";
 
 export function dataInput(userMessage: string, dataType: string): string {
     const input = require('prompt-sync')();
@@ -19,6 +20,14 @@ export function dataInput(userMessage: string, dataType: string): string {
             console.log("Incorrect entry. Try again.");
             value = input(userMessage);
             isLetter = checkAlphabetLetter(value);
+        }
+    }
+    if (dataType === 'Month') {
+        let isLetter = checkMonth(value);
+        while(!isLetter) {
+            console.log("Incorrect entry. Try again.");
+            value = input(userMessage);
+            isLetter = checkMonth(value);
         }
     }
     return value;
