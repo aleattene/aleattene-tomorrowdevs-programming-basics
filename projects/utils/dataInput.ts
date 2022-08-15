@@ -1,6 +1,7 @@
 import {checkPositiveInteger} from "./number/checkInteger";
 import {checkAlphabetLetter} from "./string/checkLetter";
 import {checkMonth} from "./date/checkMonth";
+import {checkNote} from "./custom/checkNote";
 
 export function dataInput(userMessage: string, dataType: string): string {
     const input = require('prompt-sync')();
@@ -28,6 +29,14 @@ export function dataInput(userMessage: string, dataType: string): string {
             console.log("Incorrect entry. Try again.");
             value = input(userMessage);
             isLetter = checkMonth(value);
+        }
+    }
+    if (dataType === 'Note') {
+        let isValidNote = checkNote(value);
+        while(!isValidNote) {
+            console.log("Incorrect entry. Try again.");
+            value = input(userMessage);
+            isValidNote = checkNote(value);
         }
     }
     return value;
