@@ -1,4 +1,4 @@
-import {checkAlphabetLetter} from './checkLetter';
+import {checkAlphabetLetter, checkLowerLettersAndSpaces} from './checkLetter';
 
 describe('Check Alphabet Letter', () => {
     it('Test', () => {
@@ -78,6 +78,89 @@ describe('Check Alphabet Letter', () => {
         expect(checkAlphabetLetter(" 1 ")).toBe(false);
         expect(checkAlphabetLetter("null")).toBe(false);
         expect(checkAlphabetLetter("undefined")).toBe(false);
+    });
+});
 
+
+describe('Check Lower Letters And Spaces', () => {
+    it('Test', () => {
+        expect(checkLowerLettersAndSpaces("")).toBe(false);
+        expect(checkLowerLettersAndSpaces("a")).toBe(true);
+        expect(checkLowerLettersAndSpaces("b")).toBe(true);
+        expect(checkLowerLettersAndSpaces("c")).toBe(true);
+        expect(checkLowerLettersAndSpaces("d")).toBe(true);
+        expect(checkLowerLettersAndSpaces("e")).toBe(true);
+        expect(checkLowerLettersAndSpaces("f")).toBe(true);
+        expect(checkLowerLettersAndSpaces("g")).toBe(true);
+        expect(checkLowerLettersAndSpaces("h")).toBe(true);
+        expect(checkLowerLettersAndSpaces("i")).toBe(true);
+        expect(checkLowerLettersAndSpaces("j")).toBe(true);
+        expect(checkLowerLettersAndSpaces("k")).toBe(true);
+        expect(checkLowerLettersAndSpaces("l")).toBe(true);
+        expect(checkLowerLettersAndSpaces("m")).toBe(true);
+        expect(checkLowerLettersAndSpaces("n")).toBe(true);
+        expect(checkLowerLettersAndSpaces("o")).toBe(true);
+        expect(checkLowerLettersAndSpaces("p")).toBe(true);
+        expect(checkLowerLettersAndSpaces("q")).toBe(true);
+        expect(checkLowerLettersAndSpaces("r")).toBe(true);
+        expect(checkLowerLettersAndSpaces("s")).toBe(true);
+        expect(checkLowerLettersAndSpaces("t")).toBe(true);
+        expect(checkLowerLettersAndSpaces("u")).toBe(true);
+        expect(checkLowerLettersAndSpaces("v")).toBe(true);
+        expect(checkLowerLettersAndSpaces("w")).toBe(true);
+        expect(checkLowerLettersAndSpaces("x")).toBe(true);
+        expect(checkLowerLettersAndSpaces("z")).toBe(true);
+        expect(checkLowerLettersAndSpaces("A")).toBe(false);
+        expect(checkLowerLettersAndSpaces("B")).toBe(false);
+        expect(checkLowerLettersAndSpaces("C")).toBe(false);
+        expect(checkLowerLettersAndSpaces("D")).toBe(false);
+        expect(checkLowerLettersAndSpaces("E")).toBe(false);
+        expect(checkLowerLettersAndSpaces("F")).toBe(false);
+        expect(checkLowerLettersAndSpaces("G")).toBe(false);
+        expect(checkLowerLettersAndSpaces("H")).toBe(false);
+        expect(checkLowerLettersAndSpaces("I")).toBe(false);
+        expect(checkLowerLettersAndSpaces("J")).toBe(false);
+        expect(checkLowerLettersAndSpaces("K")).toBe(false);
+        expect(checkLowerLettersAndSpaces("L")).toBe(false);
+        expect(checkLowerLettersAndSpaces("M")).toBe(false);
+        expect(checkLowerLettersAndSpaces("N")).toBe(false);
+        expect(checkLowerLettersAndSpaces("O")).toBe(false);
+        expect(checkLowerLettersAndSpaces("P")).toBe(false);
+        expect(checkLowerLettersAndSpaces("Q")).toBe(false);
+        expect(checkLowerLettersAndSpaces("R")).toBe(false);
+        expect(checkLowerLettersAndSpaces("S")).toBe(false);
+        expect(checkLowerLettersAndSpaces("T")).toBe(false);
+        expect(checkLowerLettersAndSpaces("U")).toBe(false);
+        expect(checkLowerLettersAndSpaces("V")).toBe(false);
+        expect(checkLowerLettersAndSpaces("W")).toBe(false);
+        expect(checkLowerLettersAndSpaces("X")).toBe(false);
+        expect(checkLowerLettersAndSpaces("Z")).toBe(false);
+        expect(checkLowerLettersAndSpaces("y")).toBe(true);
+        expect(checkLowerLettersAndSpaces("Y")).toBe(false);
+        expect(checkLowerLettersAndSpaces(" ")).toBe(true);
+        expect(checkLowerLettersAndSpaces("  ")).toBe(true);
+        expect(checkLowerLettersAndSpaces("0")).toBe(false);
+        expect(checkLowerLettersAndSpaces("1")).toBe(false);
+        expect(checkLowerLettersAndSpaces("2")).toBe(false);
+        expect(checkLowerLettersAndSpaces("3")).toBe(false);
+        expect(checkLowerLettersAndSpaces("4")).toBe(false);
+        expect(checkLowerLettersAndSpaces("5")).toBe(false);
+        expect(checkLowerLettersAndSpaces("6")).toBe(false);
+        expect(checkLowerLettersAndSpaces("7")).toBe(false);
+        expect(checkLowerLettersAndSpaces("8")).toBe(false);
+        expect(checkLowerLettersAndSpaces("9")).toBe(false);
+        expect(checkLowerLettersAndSpaces("10")).toBe(false);
+        expect(checkLowerLettersAndSpaces(" 1")).toBe(false);
+        expect(checkLowerLettersAndSpaces(".")).toBe(false);
+        expect(checkLowerLettersAndSpaces(",")).toBe(false);
+        expect(checkLowerLettersAndSpaces(". ")).toBe(false);
+        expect(checkLowerLettersAndSpaces(", ")).toBe(false);
+        expect(checkLowerLettersAndSpaces(" . ")).toBe(false);
+        expect(checkLowerLettersAndSpaces(" , ")).toBe(false);
+        expect(checkLowerLettersAndSpaces(" 1 ")).toBe(false);
+        expect(checkLowerLettersAndSpaces("null")).toBe(true);
+        expect(checkLowerLettersAndSpaces("undefined")).toBe(true);
+        expect(checkLowerLettersAndSpaces("aA")).toBe(false);
+        expect(checkLowerLettersAndSpaces("Bb")).toBe(false);
     });
 });
