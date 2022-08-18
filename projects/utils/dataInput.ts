@@ -1,5 +1,5 @@
 import {checkPositiveInteger} from "./number/checkInteger";
-import {checkAlphabetLetter} from "./string/checkLetter";
+import {checkAlphabetLetter, checkLowerLettersAndSpaces} from "./string/checkLetter";
 import {checkMonth} from "./date/checkMonth";
 import {checkNote} from "./custom/checkNote";
 
@@ -7,7 +7,7 @@ export function dataInput(userMessage: string, dataType: string): string {
     const input = require('prompt-sync')();
     let value: string = input(userMessage);
     if (dataType === 'PositiveInteger') {
-        let isPositiveInteger = checkPositiveInteger(value);
+        let isPositiveInteger: boolean = checkPositiveInteger(value);
         while(!isPositiveInteger) {
             console.log("Incorrect entry. Try again.");
             value = input(userMessage);
@@ -16,7 +16,7 @@ export function dataInput(userMessage: string, dataType: string): string {
     value = (~~(Number(value))).toString();
     }
     if (dataType === 'AlphabetLetter') {
-        let isLetter = checkAlphabetLetter(value);
+        let isLetter: boolean = checkAlphabetLetter(value);
         while(!isLetter) {
             console.log("Incorrect entry. Try again.");
             value = input(userMessage);
@@ -24,7 +24,7 @@ export function dataInput(userMessage: string, dataType: string): string {
         }
     }
     if (dataType === 'Month') {
-        let isLetter = checkMonth(value);
+        let isLetter: boolean = checkMonth(value);
         while(!isLetter) {
             console.log("Incorrect entry. Try again.");
             value = input(userMessage);
@@ -32,11 +32,19 @@ export function dataInput(userMessage: string, dataType: string): string {
         }
     }
     if (dataType === 'Note') {
-        let isValidNote = checkNote(value);
+        let isValidNote: boolean = checkNote(value);
         while(!isValidNote) {
             console.log("Incorrect entry. Try again.");
             value = input(userMessage);
             isValidNote = checkNote(value);
+        }
+    }
+    if (dataType === 'LowerLetters') {
+        let isValidNote: boolean = checkLowerLettersAndSpaces(value);
+        while(!isValidNote) {
+            console.log("Incorrect entry. Try again.");
+            value = input(userMessage);
+            isValidNote = checkLowerLettersAndSpaces(value);
         }
     }
     return value;
