@@ -1,6 +1,6 @@
 import {translateToPigLatin} from "../../solutions/aleattene/solution-011-pig-latin";
 
-describe('People Same Weight', () => {
+describe('Translate to Pig Latin', () => {
     it('Test', () => {
         expect(translateToPigLatin(['computer'])).toEqual(['omputercay']);
         expect(translateToPigLatin(['think'])).toEqual(['inkthay']);
