@@ -15,6 +15,15 @@ export function dataInput(userMessage: string, dataType: string): string {
         }
     value = (~~(Number(value))).toString();
     }
+    if (dataType === 'Integer') {
+        let isInteger: boolean = Number.isInteger(Number(value)) && (value !== '');
+        while (!isInteger) {
+            console.log("Incorrect entry. Try again.");
+            value = input(userMessage);
+            isInteger = Number.isInteger(Number(value));
+        }
+        value = (~~(Number(value))).toString();
+    }
     if (dataType === 'AlphabetLetter') {
         let isLetter: boolean = checkAlphabetLetter(value);
         while(!isLetter) {
