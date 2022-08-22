@@ -2,8 +2,9 @@ import {checkPositiveInteger} from "./number/checkInteger";
 import {checkAlphabetLetter, checkLowerLettersAndSpaces} from "./string/checkLetter";
 import {checkMonth} from "./date/checkMonth";
 import {checkNote} from "./custom/checkNote";
+import {checkArrayPositiveInteger} from "./custom/checkArrayPositiveInteger";
 
-export function dataInput(userMessage: string, dataType: string): string {
+export function dataInput(userMessage: string, dataType: string, minLengthArray?: number): string {
     const input = require('prompt-sync')();
     let value: string = input(userMessage);
     if (dataType === 'PositiveInteger') {
@@ -54,6 +55,14 @@ export function dataInput(userMessage: string, dataType: string): string {
             console.log("Incorrect entry. Try again.");
             value = input(userMessage);
             isValidNote = checkLowerLettersAndSpaces(value);
+        }
+    }
+    if (dataType === 'ArrayPositiveInteger') {
+        let isValid: boolean = checkArrayPositiveInteger(value, minLengthArray);
+        while (!isValid) {
+            console.log("Incorrect entry. Try again.");
+            value = input(userMessage);
+            isValid = checkArrayPositiveInteger(value, minLengthArray);
         }
     }
     return value;
