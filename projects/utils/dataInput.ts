@@ -3,6 +3,7 @@ import {checkAlphabetLetter, checkLowerLettersAndSpaces} from "./string/checkLet
 import {checkMonth} from "./date/checkMonth";
 import {checkNote} from "./custom/checkNote";
 import {checkArrayPositiveInteger} from "./custom/checkArrayPositiveInteger";
+import {checkChessboardPosition} from "./custom/checkChessboardPosition";
 
 export function dataInput(userMessage: string, dataType: string, minLengthArray?: number): string {
     const input = require('prompt-sync')();
@@ -63,6 +64,14 @@ export function dataInput(userMessage: string, dataType: string, minLengthArray?
             console.log("Incorrect entry. Try again.");
             value = input(userMessage);
             isValid = checkArrayPositiveInteger(value, minLengthArray);
+        }
+    }
+    if (dataType === 'ChessboardPosition') {
+        let isValid: boolean = checkChessboardPosition(value);
+        while (!isValid) {
+            console.log("Incorrect entry. Try again.");
+            value = input(userMessage);
+            isValid = checkChessboardPosition(value);
         }
     }
     return value;
