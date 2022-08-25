@@ -1,0 +1,112 @@
+import {getFizzBuzz} from '../../solutions/aleattene/solution-024-fizz-buzz';
+
+describe('Get Color Square From Chessboard Position', () => {
+    it('Test', () => {
+        expect(getFizzBuzz(1)).toBe('|            01             |');
+        expect(getFizzBuzz(2)).toBe('|            02             |');
+        expect(getFizzBuzz(3)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(4)).toBe('|            04             |');
+        expect(getFizzBuzz(5)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(6)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(7)).toBe('|            07             |');
+        expect(getFizzBuzz(8)).toBe('|            08             |');
+        expect(getFizzBuzz(9)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(10)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(11)).toBe('|            11             |');
+        expect(getFizzBuzz(12)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(13)).toBe('|            13             |');
+        expect(getFizzBuzz(14)).toBe('|            14             |');
+        expect(getFizzBuzz(15)).toBe('|        Fizz  Buzz         |');
+        expect(getFizzBuzz(16)).toBe('|            16             |');
+        expect(getFizzBuzz(17)).toBe('|            17             |');
+        expect(getFizzBuzz(18)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(19)).toBe('|            19             |');
+        expect(getFizzBuzz(20)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(21)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(22)).toBe('|            22             |');
+        expect(getFizzBuzz(23)).toBe('|            23             |');
+        expect(getFizzBuzz(24)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(25)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(26)).toBe('|            26             |');
+        expect(getFizzBuzz(27)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(28)).toBe('|            28             |');
+        expect(getFizzBuzz(29)).toBe('|            29             |');
+        expect(getFizzBuzz(30)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(31)).toBe('|            31             |');
+        expect(getFizzBuzz(32)).toBe('|            32             |');
+        expect(getFizzBuzz(33)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(34)).toBe('|            34             |');
+        expect(getFizzBuzz(35)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(36)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(37)).toBe('|            37             |');
+        expect(getFizzBuzz(38)).toBe('|            38             |');
+        expect(getFizzBuzz(39)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(40)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(41)).toBe('|            41             |');
+        expect(getFizzBuzz(42)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(43)).toBe('|            43             |');
+        expect(getFizzBuzz(44)).toBe('|            44             |');
+        expect(getFizzBuzz(45)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(46)).toBe('|            46             |');
+        expect(getFizzBuzz(47)).toBe('|            47             |');
+        expect(getFizzBuzz(48)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(49)).toBe('|            49             |');
+        expect(getFizzBuzz(50)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(51)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(52)).toBe('|            52             |');
+        expect(getFizzBuzz(53)).toBe('|            53             |');
+        expect(getFizzBuzz(54)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(55)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(56)).toBe('|            56             |');
+        expect(getFizzBuzz(57)).toBe('|            57             |');
+        expect(getFizzBuzz(58)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(59)).toBe('|            59             |');
+        expect(getFizzBuzz(60)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(61)).toBe('|            61             |');
+        expect(getFizzBuzz(62)).toBe('|            62             |');
+        expect(getFizzBuzz(63)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(64)).toBe('|            64             |');
+        expect(getFizzBuzz(65)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(66)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(67)).toBe('|            67             |');
+        expect(getFizzBuzz(68)).toBe('|            68             |');
+        expect(getFizzBuzz(69)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(70)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(71)).toBe('|            71             |');
+        expect(getFizzBuzz(72)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(73)).toBe('|            73             |');
+        expect(getFizzBuzz(74)).toBe('|            74             |');
+        expect(getFizzBuzz(75)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(76)).toBe('|            76             |');
+        expect(getFizzBuzz(77)).toBe('|            77             |');
+        expect(getFizzBuzz(78)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(79)).toBe('|            79             |');
+        expect(getFizzBuzz(80)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(81)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(82)).toBe('|            82             |');
+        expect(getFizzBuzz(83)).toBe('|            83             |');
+        expect(getFizzBuzz(84)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(85)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(86)).toBe('|            86             |');
+        expect(getFizzBuzz(87)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(88)).toBe('|            88             |');
+        expect(getFizzBuzz(90)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(91)).toBe('|            91             |');
+        expect(getFizzBuzz(92)).toBe('|            92             |');
+        expect(getFizzBuzz(93)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(94)).toBe('|            94             |');
+        expect(getFizzBuzz(95)).toBe('|           Buzz            |');
+        expect(getFizzBuzz(96)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(97)).toBe('|            97             |');
+        expect(getFizzBuzz(98)).toBe('|            98             |');
+        expect(getFizzBuzz(99)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(100)).toBe('|           Buzz            |');
+
+
+
+
+
+
+
+    });
+});
