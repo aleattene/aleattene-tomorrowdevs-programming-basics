@@ -1,6 +1,6 @@
 import {getFizzBuzz} from '../../solutions/aleattene/solution-024-fizz-buzz';
 
-describe('Get Color Square From Chessboard Position', () => {
+describe('Fizz Buzz (first 100 numbers)', () => {
     it('Test', () => {
         expect(getFizzBuzz(1)).toBe('|            01             |');
         expect(getFizzBuzz(2)).toBe('|            02             |');
@@ -31,7 +31,7 @@ describe('Get Color Square From Chessboard Position', () => {
         expect(getFizzBuzz(27)).toBe('|           Fizz            |');
         expect(getFizzBuzz(28)).toBe('|            28             |');
         expect(getFizzBuzz(29)).toBe('|            29             |');
-        expect(getFizzBuzz(30)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(30)).toBe('|        Fizz  Buzz         |');
         expect(getFizzBuzz(31)).toBe('|            31             |');
         expect(getFizzBuzz(32)).toBe('|            32             |');
         expect(getFizzBuzz(33)).toBe('|           Fizz            |');
@@ -46,7 +46,7 @@ describe('Get Color Square From Chessboard Position', () => {
         expect(getFizzBuzz(42)).toBe('|           Fizz            |');
         expect(getFizzBuzz(43)).toBe('|            43             |');
         expect(getFizzBuzz(44)).toBe('|            44             |');
-        expect(getFizzBuzz(45)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(45)).toBe('|        Fizz  Buzz         |');
         expect(getFizzBuzz(46)).toBe('|            46             |');
         expect(getFizzBuzz(47)).toBe('|            47             |');
         expect(getFizzBuzz(48)).toBe('|           Fizz            |');
@@ -58,10 +58,10 @@ describe('Get Color Square From Chessboard Position', () => {
         expect(getFizzBuzz(54)).toBe('|           Fizz            |');
         expect(getFizzBuzz(55)).toBe('|           Buzz            |');
         expect(getFizzBuzz(56)).toBe('|            56             |');
-        expect(getFizzBuzz(57)).toBe('|            57             |');
-        expect(getFizzBuzz(58)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(57)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(58)).toBe('|            58             |');
         expect(getFizzBuzz(59)).toBe('|            59             |');
-        expect(getFizzBuzz(60)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(60)).toBe('|        Fizz  Buzz         |');
         expect(getFizzBuzz(61)).toBe('|            61             |');
         expect(getFizzBuzz(62)).toBe('|            62             |');
         expect(getFizzBuzz(63)).toBe('|           Fizz            |');
@@ -76,7 +76,7 @@ describe('Get Color Square From Chessboard Position', () => {
         expect(getFizzBuzz(72)).toBe('|           Fizz            |');
         expect(getFizzBuzz(73)).toBe('|            73             |');
         expect(getFizzBuzz(74)).toBe('|            74             |');
-        expect(getFizzBuzz(75)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(75)).toBe('|        Fizz  Buzz         |');
         expect(getFizzBuzz(76)).toBe('|            76             |');
         expect(getFizzBuzz(77)).toBe('|            77             |');
         expect(getFizzBuzz(78)).toBe('|           Fizz            |');
@@ -90,7 +90,7 @@ describe('Get Color Square From Chessboard Position', () => {
         expect(getFizzBuzz(86)).toBe('|            86             |');
         expect(getFizzBuzz(87)).toBe('|           Fizz            |');
         expect(getFizzBuzz(88)).toBe('|            88             |');
-        expect(getFizzBuzz(90)).toBe('|           Fizz            |');
+        expect(getFizzBuzz(90)).toBe('|        Fizz  Buzz         |');
         expect(getFizzBuzz(91)).toBe('|            91             |');
         expect(getFizzBuzz(92)).toBe('|            92             |');
         expect(getFizzBuzz(93)).toBe('|           Fizz            |');
@@ -101,12 +101,5 @@ describe('Get Color Square From Chessboard Position', () => {
         expect(getFizzBuzz(98)).toBe('|            98             |');
         expect(getFizzBuzz(99)).toBe('|           Fizz            |');
         expect(getFizzBuzz(100)).toBe('|           Buzz            |');
-
-
-
-
-
-
-
     });
 });
