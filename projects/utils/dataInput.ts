@@ -76,11 +76,11 @@ export function dataInput(userMessage: string, dataType: string, minLengthArray?
         }
     }
     if (dataType === 'Byte') {
-        let isValidByte: boolean = checkByte(value);
+        let isValidByte: boolean = checkByte(value) || (value === "");
         while (!isValidByte) {
             console.log("Incorrect entry. Try again.");
             value = input(userMessage);
-            isValidByte = checkByte(value);
+            isValidByte = checkByte(value) || (value === "");
         }
     }
     return value;
