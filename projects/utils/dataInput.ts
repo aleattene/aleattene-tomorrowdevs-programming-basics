@@ -5,6 +5,7 @@ import {checkNote} from "./custom/checkNote";
 import {checkArrayPositiveInteger} from "./custom/checkArrayPositiveInteger";
 import {checkChessboardPosition} from "./custom/checkChessboardPosition";
 import {checkByte} from "./custom/checkByte";
+import {checkYear} from "./date/checkYear";
 
 export function dataInput(userMessage: string, dataType: string, minLengthArray?: number): string {
     const input = require('prompt-sync')();
@@ -81,6 +82,14 @@ export function dataInput(userMessage: string, dataType: string, minLengthArray?
             console.log("Incorrect entry. Try again.");
             value = input(userMessage);
             isValidByte = checkByte(value) || (value === "");
+        }
+    }
+    if (dataType === 'Year') {
+        let isValidYear: boolean = checkYear(value);
+        while (!isValidYear) {
+            console.log("Incorrect entry. Try again.");
+            value = input(userMessage);
+            isValidYear = checkYear(value);
         }
     }
     return value;

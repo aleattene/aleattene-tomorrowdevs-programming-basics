@@ -1,4 +1,4 @@
-import {getColorSquareFromPosition} from '../../solutions/aleattene/solution-012-what-color-is-that-square';
+import {getColorSquareFromPosition} from "../../solutions/aleattene/solution-012-what-color-is-that-square";
 
 describe('Get Color Square From Chessboard Position', () => {
     it('Test', () => {
