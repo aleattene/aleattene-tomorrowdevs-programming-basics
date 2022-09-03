@@ -1,6 +1,6 @@
-import {dataInput} from "../../../../utils/dataInput";
+// import {dataInput} from "../../../../utils/dataInput";
 
-function isLeapYear(year:string) {
+export function isLeapYear(year: string): string {
     const yearNumber = Number(year);
     if (yearNumber % 400 == 0 || (yearNumber % 4 == 0 && yearNumber % 100 != 0)) {
         return "is a Leap Year";
@@ -9,8 +9,8 @@ function isLeapYear(year:string) {
     }
 }
 
-const year = dataInput('Enter the Year you want to know if it is a leap or not: ', 'Year');
+// const year = dataInput('Enter the Year you want to know if it is a leap or not: ', 'Year');
 
-const yearLeapOrNot = isLeapYear(year);
+// const yearLeapOrNot = isLeapYear(year);
 
-console.log(`The year ${year} ${yearLeapOrNot}.`);
+// console.log(`The year ${year} ${yearLeapOrNot}.`);
