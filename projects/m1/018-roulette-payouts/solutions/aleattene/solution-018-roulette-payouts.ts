@@ -5,7 +5,8 @@ const number = Math.floor(Math.random() * (rangeNumbers + 2));
 
 export function overOrUnder18(number: number): string {
     if (number >= 1 && number <= 18) return "1 to 18";
-    else return "19 to 36";
+    else if (number >= 19 && number <= 36) return "19 to 36";
+    else return "Error"
 }
 
 export function redOrBlack(number: number): string {
