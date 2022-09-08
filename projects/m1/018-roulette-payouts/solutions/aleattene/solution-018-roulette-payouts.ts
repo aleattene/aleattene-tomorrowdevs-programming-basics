@@ -1,7 +1,7 @@
 // Numbers from 0 to 36
-const rangeNumbers = 36;
+const rangeNumbers: number = 36;
 // Numbers from 0 to 37 (37 to be considered 00)
-const number = Math.floor(Math.random() * (rangeNumbers + 2));
+const number: number = Math.floor(Math.random() * (rangeNumbers + 2));
 
 export function overOrUnder18(number: number): string {
     if (number >= 1 && number <= 18) return "1 to 18";
