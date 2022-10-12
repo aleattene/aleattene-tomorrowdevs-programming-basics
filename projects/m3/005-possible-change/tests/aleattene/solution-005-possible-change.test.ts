@@ -711,7 +711,7 @@ describe('Test Function Is Possible Change', () => {
         expect(isPossibleChange(1.45,9, coinsDenominations)).toBe(true);    // (0.05, 0.05, 0.05, 0.05, 0.25, 0.25, 0.25, 0.25, 0.25)
         expect(isPossibleChange(0.75,9, coinsDenominations)).toBe(true);    // (0.05, 0.05, 0.05, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10)
         expect(isPossibleChange(0.90,9, coinsDenominations)).toBe(true);    // (0.05, 0.05, 0.05, 0.10, 0.10, 0.10, 0.10, 0.10, 0.25)
-        expect(isPossibleChange(1.04,9, coinsDenominations)).toBe(true);    // (0.05, 0.05, 0.05, 0.10, 0.10, 0.10, 0.10, 0.25, 0.25)
+        expect(isPossibleChange(1.05,9, coinsDenominations)).toBe(true);    // (0.05, 0.05, 0.05, 0.10, 0.10, 0.10, 0.10, 0.25, 0.25)
         expect(isPossibleChange(1.20,9, coinsDenominations)).toBe(true);    // (0.05, 0.05, 0.05, 0.10, 0.10, 0.10, 0.25, 0.25, 0.25)
         expect(isPossibleChange(1.35,9, coinsDenominations)).toBe(true);    // (0.05, 0.05, 0.05, 0.10, 0.10, 0.25, 0.25, 0.25, 0.25)
         expect(isPossibleChange(1.50,9, coinsDenominations)).toBe(true);    // (0.05, 0.05, 0.05, 0.10, 0.25, 0.25, 0.25, 0.25, 0.25)
