@@ -1,5 +1,5 @@
 
-const message: string = "M3ssagg10 d1 Pr0va";
+// const message: string = "M3ssagg10 d1 Pr0va";
 
 export function caesarCipher (message: string, shift: number): string {
     const alphabetLowerLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
@@ -25,4 +25,4 @@ export function shiftedLetter(alphabet: string[], char: string, numPositions: nu
 }
 
 
-console.log(caesarCipher(caesarCipher(message, 78), -78))
+//console.log(caesarCipher(caesarCipher(message, 78), -78))
